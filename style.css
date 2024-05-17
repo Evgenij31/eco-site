@@ -1,0 +1,152 @@
+:root {
+    --primary-color: rgb(0, 103, 105);
+    --secondary-color: rgb(64, 165, 120);
+    --tertiary-color: rgb(157, 222, 139);
+    --quartary-color: rgb(230, 255, 148);
+
+    --header-color: rgba(230, 255, 148, 0.5);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+header #logo {
+    width: 15%;
+    filter: drop-shadow(0 0 4px green);
+}
+
+nav {
+    justify-self: right;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 3%;
+    width: 100%;
+    font-size: 2.3vh;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#nav-btn {
+    display: none;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.burger::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.burger::after {
+    content: '';
+    margin-top: 8px;
+}
+
+.parallax {
+    height: 100vh;
+    perspective: 1px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax::-webkit-scrollbar {
+    width: 0;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+}
+
+.parallax-layer img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.parallax .layer1 {
+    /*sky layer*/
+    transform: translateZ(0);
+}
+
+.parallax .layer2 {
+    /*mountain layer*/
+    transform: translateZ(-1px);
+    top: 50vh;
+    scale: 2.6;
+}
+
+.parallax .layer3 {
+    /*text layer*/
+    transform: translateZ(-2px);
+    text-align: center;
+    scale: 4;
+    font-size: 5vh;
+    color: white;
+    text-shadow: 0 0 4px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax .layer3 h2 {
+    margin-top: 35vh;
+}
+
+.parallax .layer4 {
+    /*cliff layer*/
+    transform: translateZ(-3px);
+    top: 35vh;
+    scale: 3.5;
+}
+
+#save-our-planet {
+    height: 100vh;
+    background-color: red;
+}

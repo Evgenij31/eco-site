@@ -1,0 +1,107 @@
+@media (max-width: 1440px) {
+
+    /*1440x900*/
+    .parallax-layer {
+        height: 70vh;
+    }
+
+    .parallax .layer2 {
+        top: 30vh;
+        scale: 2.9;
+    }
+
+    .parallax .layer3 h2 {
+        margin-top: 25vh;
+    }
+
+    .parallax .layer4 {
+        top: 30vh;
+        scale: 4;
+    }
+}
+
+@media (max-width: 1024px) {
+    .parallax-layer {
+        height: 50vh;
+    }
+
+    .parallax .layer2 {
+        top: 60vh;
+        scale: 4;
+    }
+
+    .parallax .layer3 h2 {
+        margin-top: 15vh;
+    }
+
+    .parallax .layer4 {
+        top: 50vh;
+        scale: 5;
+    }
+}
+
+/*mobile*/
+@media (max-width: 800px) {
+    #nav-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 30px 45px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .parallax-layer {
+        height: 20vh;
+    }
+
+    .parallax .layer1 img {
+        height: 100vh;
+    }
+
+    .parallax .layer2 {
+        top: 40vh;
+        scale: 4.5;
+    }
+
+    .parallax .layer3 h2 {
+        margin-top: 60vh;
+    }
+
+    .parallax .layer4 {
+        top: 50vh;
+        scale: 5.5;
+    }
+
+    header #logo {
+        width: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    header #logo {
+        width: 35%;
+    }
+
+    .parallax-layer {
+        height: 10vh;
+    }
+
+    .parallax .layer2 {
+        top: 20vh;
+        scale: 8;
+    }
+
+    .parallax .layer3 h2 {
+        margin-top: 50vh;
+    }
+
+    .parallax .layer4 {
+        top: 60vh;
+        scale: 10;
+    }
+}
