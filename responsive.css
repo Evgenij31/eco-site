@@ -42,17 +42,31 @@
 
 /*mobile*/
 @media (max-width: 800px) {
-    #nav-btn {
-        display: block;
+    #open-nav-btn,
+    #close-nav-btn {
         position: absolute;
         top: 0;
         right: 0;
-        padding: 30px 45px;
+        margin: 16px;
+    }
+
+    #close-nav-btn {
+        display: none;
+    }
+
+    #open-nav-btn {
+        display: block;
     }
 
     nav ul {
         display: none;
         flex-direction: column;
+        padding: 26px;
+        font-size: 2.8vh;
+    }
+
+    nav ul li {
+        padding: 3px;
     }
 
     .parallax-layer {

@@ -7,16 +7,20 @@
     <title>Green Pulse</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
     <header>
         <img id="logo" src="img/logo.png" alt="Green Pulse Logo">
-        <div id="nav-btn">
-            <div class="burger"></div>
-        </div>
+        <button id="open-nav-btn" onclick="openNav()">
+            <img src="img/nav-icons/nav-bar-ico.png" alt="open navigation button">
+        </button>
+        <button id="close-nav-btn" onclick="closeNav()">
+            <img src="img/nav-icons/x-ico.png" alt="open navigation button">
+        </button>
         <nav>
-            <ul>
+            <ul id="nav-ul">
                 <li><a href="">Home</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Get involved</a></li>
