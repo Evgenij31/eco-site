@@ -42,6 +42,7 @@
 
 /*mobile*/
 @media (max-width: 800px) {
+
     #open-nav-btn,
     #close-nav-btn {
         position: absolute;
@@ -94,6 +95,41 @@
     header #logo {
         width: 20%;
     }
+
+    section p {
+        padding: 10px 0;
+    }
+
+    section .container {
+        width: 100%;
+    }
+
+    .bg-image {
+        height: 40vh;
+        border-radius: 5px;
+    }
+
+    html {
+        scroll-padding-top: 200px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        width: auto;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+
+    footer ul li {
+        padding: 6px;
+    }
+
+    footer img {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -117,5 +153,40 @@
     .parallax .layer4 {
         top: 60vh;
         scale: 10;
+    }
+}
+
+@media (max-width: 380px) {
+    .parallax-layer {
+        height: 4vh;
+    }
+
+    .parallax .layer2 {
+        top: 20vh;
+        scale: 8;
+    }
+
+    .parallax .layer3 h2 {
+        margin-top: 50vh;
+    }
+
+    .parallax .layer4 {
+        top: 60vh;
+        scale: 10;
+    }
+}
+
+@media (max-width: 320px) {
+    .parallax-layer {
+        height: 2vh;
+    }
+
+    .parallax .layer3 {
+        font-size: 4vh;
+    }
+
+    .parallax .layer4 {
+        top: 40vh;
+        scale: 12;
     }
 }

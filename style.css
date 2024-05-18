@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 :root {
     --primary-color: rgb(0, 103, 105);
     --secondary-color: rgb(64, 165, 120);
@@ -7,10 +9,15 @@
     --header-color: rgba(230, 255, 148, 0.5);
 }
 
+
 * {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -27,18 +34,24 @@ header {
     width: 100%;
     backdrop-filter: blur(10px);
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: .3s ease;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 header #logo {
-    width: 15%;
-    filter: drop-shadow(0 0 4px green);
+    width: 10%;
+    filter: drop-shadow(0 0 3px rgba(209, 209, 209, 0.8));
+    animation: fade-in 2s ease;
+    padding: .3rem;
 }
 
 nav {
     justify-self: right;
-    width: 100%;
+    width: 60%;
 }
 
 nav ul {
@@ -46,7 +59,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 3%;
+    gap: 5%;
     width: 100%;
     font-size: 2.3vh;
     font-weight: bold;
@@ -54,7 +67,28 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: white;
+}
+
+nav ul li {
+    animation: scale-in 1s;
+    transition: .3s ease;
+}
+
+nav ul li:hover {
+    text-shadow: 0 0 5px white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--tertiary-color);
 }
 
 #open-nav-btn,
@@ -129,7 +163,145 @@ nav ul li a {
     scale: 3.5;
 }
 
-#save-our-planet {
-    height: 100vh;
-    background-color: red;
+section {
+    padding: 2rem;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h3 {
+    font-size: 4vh;
+    text-align: center;
+    padding: 24px;
+    text-transform: uppercase;
+}
+
+section h4 {
+    font-size: 3vh;
+    text-align: center;
+    padding: 20px;
+}
+
+section p {
+    padding: 16px;
+    font-size: 2.4vh;
+}
+
+section .container {
+    width: 85%;
+}
+
+.bg-image {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 80vh;
+    border-radius: 8px;
+    margin: 28px 0;
+    box-shadow: 0 0 5px black;
+}
+
+#about-ecology {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#about-ecology .bg-image {
+    background-image: url(img/ecology.png);
+}
+
+#biodiversity {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+#biodiversity .bg-image {
+    background-image: url(img/biodiversity.jpg);
+}
+
+#climate-change {
+    background-color: var(--primary-color);
+    color: var(--quartary-color);
+}
+
+#climate-change .bg-image {
+    background-image: url(img/climate-change.jpg);
+}
+
+#get-involved {
+    background-color: var(--quartary-color);
+    color: var(--primary-color);
+}
+
+#get-involved ul {
+    padding: 16px;
+    list-style: inside;
+    font-size: 2.2vh;
+}
+
+#get-involved ul li {
+    padding: 2px;
+    transition: .3s ease;
+}
+
+#get-involved ul li a {
+    color: var(--primary-color);
+}
+
+#get-involved ul li:hover {
+    transform: translateX(8px);
+}
+
+#get-involved .bg-image {
+    background-image: url(img/ecology1.jpg);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    padding: 2px;
+}
+
+footer ul li a {
+    color: var(--tertiary-color);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.2vh;
+}
+
+footer #footer-bottom {
+    background-color: var(--secondary-color);
+    color: var(--quartary-color);
+    text-align: center;
+    padding: 10px 22px;
+    margin-top: 5px;
+    font-size: 2vh;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
