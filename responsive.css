@@ -133,16 +133,17 @@
 }
 
 @media (max-width: 500px) {
+
     header #logo {
         width: 35%;
     }
 
     .parallax-layer {
-        height: 10vh;
+        height: 6vh;
     }
 
     .parallax .layer2 {
-        top: 20vh;
+        top: 10vh;
         scale: 8;
     }
 
@@ -151,8 +152,8 @@
     }
 
     .parallax .layer4 {
-        top: 60vh;
-        scale: 10;
+        top: 30vh;
+        scale: 11;
     }
 }
 
@@ -162,8 +163,8 @@
     }
 
     .parallax .layer2 {
-        top: 20vh;
-        scale: 8;
+        top: 10vh;
+        scale: 9;
     }
 
     .parallax .layer3 h2 {
@@ -171,8 +172,8 @@
     }
 
     .parallax .layer4 {
-        top: 60vh;
-        scale: 10;
+        top: 40vh;
+        scale: 12;
     }
 }
 
@@ -181,12 +182,17 @@
         height: 2vh;
     }
 
+    .parallax .layer2 {
+        top: 11vh;
+        scale: 11;
+    }
+
     .parallax .layer3 {
         font-size: 4vh;
     }
 
     .parallax .layer4 {
         top: 40vh;
-        scale: 12;
+        scale: 13;
     }
 }
