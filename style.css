@@ -200,6 +200,7 @@ section .container {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     height: 80vh;
     border-radius: 8px;
     margin: 28px 0;
