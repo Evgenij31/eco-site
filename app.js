@@ -15,6 +15,7 @@ function openNav() {
     navUl.style.display = "block";
 }
 
+//on click close the navigation
 function closeNav() {
     closeNavBtn.style.display = "none";
     openNavBtn.style.animation = "scale-in .2s";
@@ -25,3 +26,5 @@ function closeNav() {
     logo.style.display = "block";
     navUl.style.display = "none";
 }
+
+//end of mobile navigation script
