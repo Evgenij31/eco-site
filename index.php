@@ -25,11 +25,12 @@
         <!-- navigation menu -->
         <nav>
             <ul id="nav-ul">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-ecology">Ecology</a></li>
-                <li><a href="#biodiversity">Biodiversity</a></li>
-                <li><a href="#climate-change">Climate change</a></li>
-                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="index.php#">Home</a></li>
+                <li><a href="index.php#about-ecology">Ecology</a></li>
+                <li><a href="index.php#biodiversity">Biodiversity</a></li>
+                <li><a href="index.php#climate-change">Climate change</a></li>
+                <li><a href="index.php#get-involved">Get Involved</a></li>
+                <li id="log-in-btn"><a href="login.php">Log in</a></li>
             </ul>
         </nav>
     </header>
@@ -230,11 +231,11 @@
     <footer>
         <div class="container">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-ecology">Ecology</a></li>
-                <li><a href="#biodiversity">Biodiversity</a></li>
-                <li><a href="#climate-change">Climate change</a></li>
-                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="index.php#">Home</a></li>
+                <li><a href="index.php#about-ecology">Ecology</a></li>
+                <li><a href="index.php#biodiversity">Biodiversity</a></li>
+                <li><a href="index.php#climate-change">Climate change</a></li>
+                <li><a href="index.php#get-involved">Get Involved</a></li>
             </ul>
             <div id="footer-logo">
                 <img src="img/logo-white.png" alt="Green Pulse Logo">
@@ -243,7 +244,9 @@
                 <li><a href="https://www.nature.com">nature.com</a></li>
                 <li><a href="https://www.nature.org/en-us/">nature.org</a></li>
                 <li><a href="https://ncx.com">ncx.com</a></li>
-                <li><a href="https://www.museothyssen.org/webdocs/conectathyssen/volver-naturaleza/en/">museothyssen.org</a></li>
+                <li><a
+                        href="https://www.museothyssen.org/webdocs/conectathyssen/volver-naturaleza/en/">museothyssen.org</a>
+                </li>
                 <li><a href="https://www.photoscoper.co.uk">photoscoper.co.uk</a></li>
             </ul>
         </div>
